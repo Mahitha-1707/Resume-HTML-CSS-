@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+    color:#ebe6e6
+}
+
+body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background: linear-gradient(to right, #f8f9fa, #eef2f3);
+            margin: 0;
+            line-height: 1.6;
+        }
+mark{
+    color:black;
+}
+        .header {
+            background: linear-gradient(135deg, #7b2d2d, #b94a48);
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .role {
+    font-size: 18px;
+    font-weight: bold;
+    color: #22d3ee;
+}
+
+        h1 {
+            margin: 0;
+            font-size: 2.6rem;
+            letter-spacing: 1px;
+        }
+
+        .nav {
+            background-color: #ffe5e5;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .nav a {
+            margin: 0 12px;
+            text-decoration:underline;
+            font-weight: bold;
+            color: #7b2d2d;
+            padding: 6px 10px;
+            border-radius: 4px;
+        }
+
+        nav a:hover {
+            background-color: #7b2d2d;
+            color: white;
+        }
+
+        .hamburger {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+    color: #22d3ee;
+}
+
+        .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.card {
+    background: linear-gradient(
+        135deg,
+        #7b2d2d 0%,
+        #af2b2b 100%
+    );
+
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+
+    padding: 30px;
+    margin-bottom: 30px;
+
+    box-shadow:
+        inset 0 0 0 rgba(255,255,255,0.05),
+        0 20px 40px rgba(0,0,0,0.6);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+        }
+
+        section h2 {
+            color: #f3ecec;
+            padding-left: 10px;
+        }
+
+        figure {
+            text-align: center;
+        }
+
+        figure img {
+            border-radius: 50%;
+            border: 4px solid #b94a48;
+        }
+
+        figcaption {
+            margin-top: 8px;
+            font-style: italic;
+            color: #f1eeee;
+        }
+
+        blockquote {
+            background: #fff3f3;
+            padding: 15px;
+            font-style: italic;
+            color: #920c0c;
+            border-left: #920c0c 4px solid;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        aside {
+            background: linear-gradient(135deg, #4fcace, #38a3a5);
+            padding: 15px;
+            border-radius: 8px;
+            width: 300px;
+            color: white;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+
+        }
+
+        table th {
+            background-color: #7b2d2d;
+            color: rgb(238, 233, 233);
+            padding: 10px;
+        }
+
+        table td {
+            padding: 10px;
+            background-color: #e7e0e0;
+            color:black
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f9f2f2;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 12px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        form input[type="submit"] {
+            background: linear-gradient(135deg, #7b2d2d, #75040265);
+            color: rgb(248, 245, 245);
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            letter-spacing: 1px;
+            
+        }
+
+        form input[type="submit"]:hover {
+            background: linear-gradient(135deg, #5a1f1f, #933a38);
+        }
+        #contact input,
+#contact textarea {
+    background: #f4f4f7;
+    border: 1px solid rgba(255,255,255,0.12);
+    color: #090a0a;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+#contact textarea {
+    resize: none;
+    height: 56px;
+}
+
+#contact input::placeholder,
+#contact textarea::placeholder {
+    color: #94a3b8;
+}
+
+        footer {
+            text-align: center;
+            padding: 12px;
+            background-color: #7b2d2d;
+            color: white;
+            margin-top: 30px;
+        }
+        
+        @media (max-width: 768px) {
+
+    /* Hamburger */
+    .hamburger {
+        display: inline;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        background: #7b2d2d;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 220px;
+        padding: 15px;
+        border-radius: 12px;
+        border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+
+    /* Contact form stack */
+    #contact form {
+        grid-template-columns: 1fr;
+    }
+
+    #contact textarea {
+        height: 120px;
+    }
+
+    #contact button {
+        width: 100%;
+    }
+}

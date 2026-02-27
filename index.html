@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is my HTML Project page">
+    <meta name="keywords" content="HTML,CSS,Python,Front-end Development">
+    <meta name="author" content="K. Mahitha Mohan">
+    <link rel="stylesheet" href="styles.css">
+    <title>K. Mahitha Mohan | Front-end Developer</title>
+</head>
+<body>
+<header class="header">
+    <h1>K. Mahitha Mohan</h1>
+    <p><strong>Front-end Developer</strong></p>
+    <p><em>Kadapa, Andhra Pradesh, India</em></p>
+</header>
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">K Mahitha Mohan</div>
+        <div class="hamburger" id="hamburger">☰</div>
+        <div class="nav-menu" id="navMenu">
+    <a href="#profile">Profile</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#softskills">Soft Skills</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+        </div>
+    </div>
+</nav>
+<main class="container">
+<section id="profile" class="card">
+    <h2>Profile</h2>
+    <p>Passionate front-end developer with experience in creating responsive and user-friendly web applications.</p>
+    <figure>
+        <img src="Mahitha Mohan.jpg" alt="K. Mahitha Mohan" width="150">
+        <figcaption>K. Mahitha Mohan</figcaption>
+    </figure>
+    <article>
+        <p>
+            I am <strong>K. Mahitha Mohan</strong>, a dedicated <mark>front-end developer</mark> with a keen eye for design and detail.
+            I enjoy transforming ideas into visually appealing and functional websites.
+        </p>
+    </article>
+    <blockquote>
+        "The only way to do great work is to love what you do."
+    </blockquote>
+</section>
+<section id="skills" class="card">
+    <h2>Skills</h2>
+    <ul>
+        <li>
+            <abbr title="HyperText Markup Language">HTML5</abbr>,
+            <abbr title="Cascading Style Sheets">CSS3</abbr>, JavaScript
+        </li>
+        <li>Responsive Web Design</li>
+        <li>Version Control (Git)</li>
+    </ul>
+    <dl>
+        <dt>HTML5</dt>
+        <dd>Proficient in structuring web content using semantic HTML5 elements.</dd>
+        <dt>CSS3</dt>
+        <dd>Experienced in styling web pages with modern CSS techniques.</dd>
+        <dt>JavaScript</dt>
+        <dd>Skilled in adding interactivity and dynamic content.</dd>
+    </dl>
+</section>
+<section id="projects" class="card">
+    <h2>Projects</h2>
+    <table border="5">
+        <tr>
+            <th>Project Name</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Currency Converter</td>
+            <td>A tool for converting between different currencies.</td>
+        </tr>
+        <tr>
+            <td>Skill Share</td>
+            <td>A platform for sharing skills and knowledge.</td>
+        </tr>
+        <tr>
+            <td>Course Registration System</td>
+            <td>A system for managing course registrations and enrollments.</td>
+        </tr>
+    </table>
+</section>
+<section id="softskills" class="card">
+    <h2>Soft Skills</h2>
+    <aside>
+        <p>Key soft skills that enhance my professional capabilities:</p>
+        <ol>
+            <li>Effective Communication</li>
+            <li>Team Collaboration</li>
+            <li>Problem-Solving</li>
+            <li>Time Management</li>
+        </ol>
+    </aside>
+</section>
+<section id="education" class="card">
+    <h2>Education</h2>
+    <p>
+        Bachelor of Technology in Computer Science,
+        <abbr title="Kandula Srinivasa Reddy Memorial College of Engineering">KSRMCE</abbr>,
+        2023–2027.
+    </p>
+</section>
+<section id="contact" class="card">
+    <h2>Contact</h2>
+    <p>Email: mahithamohankizhiyathodi@gmail.com</p>
+    <p>Phone: +91 7711996608</p>
+    <p>Location: Kadapa, Andhra Pradesh, India</p>
+    <form>
+        <label>Name:</label>
+        <input type="text" required>
+        <label>Email:</label>
+        <input type="email" required>
+        <label>Message:</label>
+        <textarea rows="4" required></textarea>
+        <input type="submit" value="Submit">
+    </form>
+</section>
+</main>
+<footer class="footer">
+    <p>&copy; 2025 K. Mahitha Mohan. All rights reserved.</p>
+</footer>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("navMenu");
+    hamburger.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
+    });
+});
+</script>
+</body>
+</html>
